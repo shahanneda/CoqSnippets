@@ -1,0 +1,99 @@
+{
+	// press command shift p
+	// type configure snippets file
+	// - new snippets file
+	// - paste this file
+
+
+	"Apply K1": {
+		"prefix": "appk1",
+		"body": [
+			"eapply or_introl in $1",
+			"apply <- (K1) in $1"
+		],
+		"description": "Apply K1"
+	},
+
+	"destruct": {
+		"prefix": "d",
+		"body": [
+			"destruct H$1."
+		],
+		"description": "Destruct"
+	},
+	"exact": {
+		"prefix": "e",
+		"body": [
+			"exact H$1."
+		],
+		"description": "Exact"
+	},
+
+	"apply": {
+		"prefix": "a",
+		"body": [
+			"apply"
+		],
+		"description": "Apply"
+	},
+
+	"pose proof": {
+		"prefix": "p",
+		"body": [
+			"pose proof ($0)."
+		],
+		"description": "Pose proof"
+	},
+
+	"u": {
+		"prefix": "u",
+		"body": [
+			"unfold $0."
+		],
+		"description": "Unfold"
+	},
+	"replace with ring": {
+		"prefix": "r",
+		"body": [
+			"replace ($1) with ($2) in H$3 by ring."
+		],
+		"description": "Repalc with ring"
+	},
+
+	"ring simplify": {
+		"prefix": "rs",
+		"body": [
+			"ring_simplify in H$0."
+		],
+		"description": "ring simplifiy"
+	},
+
+	"ugt": {
+		"prefix": "ugt",
+		"body": [
+			"unfold \">\" in $0.",
+			"rewrite ? MinusZero in $0."
+		],
+		"description": "Unfold gt"
+	},
+
+	"trichotomy": {
+		"prefix": "tri",
+		"body": [
+			"pose proof (A2P3 $0) as [ | [ ]].",
+		],
+		"description": "Trichotomy"
+	},
+	"unfold leq": {
+		"prefix": "uleq",
+		"body": [
+			"unfold \"≤\" in $0."
+		],
+		"description": "unfold leq"
+	},
+	
+
+}
+
+// eapply or_introl in H1.
+// apply <- (K1 ) in H1.
